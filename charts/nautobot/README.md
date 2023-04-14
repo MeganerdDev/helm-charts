@@ -959,8 +959,11 @@ helm delete nautobot
 
 ## FAQ
 FAQ
+
+```markdown
 Q. How do I list available helm chart releases for the repo?
 A. Update the helm repo `$ helm repo update`, then run `$ helm search repo nautobot --versions`
 
 Q. I don't see any pre-release helm charts from helm search repo
 A. Add the `--devel` parameter eg: `$ helm search repo nautobot --versions --devel`
+```
