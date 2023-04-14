@@ -956,3 +956,11 @@ helm delete nautobot
 | serviceAccount.annotations | object | `{}` | Service account annotations |
 | serviceAccount.create | bool | `true` | Enable creation of a Kubernetes Service Account for Nautobot |
 | serviceAccount.name | string | `$release_name` | Name of the Kubernetes Service Account for Nautobot |
+
+## FAQ
+FAQ
+Q. How do I list available helm chart releases for the repo?
+A. Update the helm repo `$ helm repo update`, then run `$ helm search repo nautobot --versions`
+
+Q. I don't see any pre-release helm charts from helm search repo
+A. Add the `--devel` parameter eg: `$ helm search repo nautobot --versions --devel`
